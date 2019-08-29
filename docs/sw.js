@@ -11,15 +11,15 @@ workbox.routing.registerRoute(
   new workbox.strategies.NetworkFirst()
 );
 
-workbox.routing.registerRoute(
-  /\.css$/,
-  new workbox.strategies.NetworkFirst()
-);
+// workbox.routing.registerRoute(
+//   /\.css$/,
+//   new workbox.strategies.NetworkFirst()
+// );
 
-workbox.routing.registerRoute(
-  /\.(?:png|jpg|jpeg|svg|gif)$/,
-  new workbox.strategies.NetworkFirst()
-);
+// workbox.routing.registerRoute(
+//   /\.(?:png|jpg|jpeg|svg|gif)$/,
+//   new workbox.strategies.CacheFirst()
+// );
 
 
 // ServiceWorker処理：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
