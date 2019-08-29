@@ -11,20 +11,20 @@ workbox.routing.registerRoute(
   new workbox.strategies.NetworkFirst()
 );
 
-// workbox.routing.registerRoute(
-//   /\.css$/,
-//   new workbox.strategies.NetworkFirst()
-// );
+workbox.routing.registerRoute(
+  /\.css$/,
+  new workbox.strategies.NetworkFirst()
+);
 
-// workbox.routing.registerRoute(
-//   /\.(?:png|jpg|jpeg|svg|gif)$/,
-//   new workbox.strategies.CacheFirst()
-// );
+workbox.routing.registerRoute(
+  /\.(?:png|jpg|jpeg|svg|gif)$/,
+  new workbox.strategies.CacheFirst()
+);
 
 
 // ServiceWorker処理：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
 
-// キャッシュ名とキャッシュファイルの指定
+// // キャッシュ名とキャッシュファイルの指定
 // var CACHE_NAME = 'pwa-sample-caches';
 // var urlsToCache = [
 // 	'/test/',
