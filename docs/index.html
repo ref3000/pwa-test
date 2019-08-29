@@ -7,6 +7,10 @@
 <title>たぴPWA</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="main.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="cup">
@@ -33,7 +37,6 @@
   <!-- カップの底 -->
   <div class="cup__bottom"></div>
 </div>
-<script src="main.js"></script>
 <script>
 // ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
 if ('serviceWorker' in navigator) {
@@ -44,5 +47,6 @@ if ('serviceWorker' in navigator) {
 	});
 }
 </script>
+<script src="main.js"></script>
 </body>
 </html>
